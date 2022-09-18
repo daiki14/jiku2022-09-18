@@ -1,0 +1,253 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  z-index: 997;
+  transition: all .3s ease;
+  &::before {
+    content: "";
+    transition: all .3s ease;
+  }
+  @include mq('pc') {
+    height: 120px;
+  }
+
+  &__inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    @include mq('pc') {
+      padding: 0 80px;
+    }
+
+    > .logo {
+      position: relative;
+      z-index: 3;
+      a {
+        img {
+          width: 60px;
+          @include mq('pc') {
+            width: 90px;
+          }
+        }
+        .gray {
+          display: none;
+        }
+      }
+    }
+
+    .hamburger {
+      width: 30px;
+      height: 20px;
+      position: relative;
+      z-index: 999;
+      @include mq('tab') {
+        cursor: pointer;
+      }
+      @include mq('pc') {
+        display: none;
+      }
+      span {
+        width: 30px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .3s ease;
+        &:nth-of-type(1) {
+          top: 0;
+        }
+        &:nth-of-type(2) {
+          top: 50%;
+        }
+        &:nth-of-type(3) {
+          top: 100%;
+        }
+      }
+    }
+
+    &-nav {
+      color: #555;
+      transform: translateX(100vw);
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 80vw;
+      height: 100vh;
+      background: #f8f6f2;
+      padding: 95px 15px 35px 45px;
+      font-size: 1.6rem;
+      transition: all .3s ease;
+      z-index: 998;
+      font-weight: 500;
+      @include mq('pc') {
+        transform: translateX(0);
+        position: static;
+        background: none;
+        color: #fff;
+        width: auto;
+        height: auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
+
+      ul {
+        @include mq('pc') {
+          display: flex;
+        }
+        //当院について、施術内容、お知らせ、よくある質問
+        &:nth-of-type(1) {
+          li {
+            &:not(:first-of-type) {
+              margin-top: 35px;
+              @include mq('pc') {
+                margin-top: 0;
+                margin-left: 40px;
+              }
+            }
+          }
+        }
+        //07090157180、アクセス
+        &:nth-of-type(2) {
+          display: flex;
+          flex-direction: column-reverse;
+          @include mq('pc') {
+            flex-direction: row;
+            align-items: center;
+          }
+          li {
+            margin-top: 35px;
+            @include mq('pc') {
+              margin-top: 0;
+            }
+            &:nth-of-type(1) {
+              margin-top: 24px;
+              @include mq('pc') {
+                margin-top: 0;
+                margin-left: 30px;
+                padding-left: 30px;
+                border-left: solid 1px #fff;
+                transition: all .3s ease;
+              }
+              a {
+                width: 100%;
+                height: 46px;
+                border: solid 1px #000;
+                display: flex;
+                align-items: center;
+                padding-left: 13px;
+                background: #fff;
+                position: relative;
+                @include mq('pc') {
+                  background: none;
+                  border: none;
+                  height: auto;
+                  padding-left: 0;
+                  font-size: 2.6rem;
+                }
+                &::before {
+                  content: "";
+                  background: url(../img/tel.svg) no-repeat center center / cover;
+                  width: 14.2px;
+                  height: 20px;
+                  margin-right: 12px;
+                  @include mq('pc') {
+                    content: none;
+                  }
+                }
+                &::after {
+                  content: "";
+                  background: url(../img/arrow.svg) no-repeat center center / cover;
+                  width: 46px;
+                  height: 7.3px;
+                  position: absolute;
+                  transform: translate(-50%, -50%);
+                  top: 50%;
+                  right: -10px;
+                  @include mq('pc') {
+                    content: none;
+                  }
+                }
+              }
+            }
+            &:nth-of-type(2) {
+              a {
+                @include mq('pc') {
+                  width: 140px;
+                  height: 40px;
+                  border: solid 1px #fff;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-left: 30px;
+                }
+              }
+            }
+          }
+        }
+        //INSTAGRAM、LINE
+        &:nth-of-type(3) {
+          @include mq('pc') {
+            display: none;
+          }
+          li {
+            margin-top: 12px;
+            @include mq('pc') {
+              margin-top: 0;
+            }
+            &:nth-of-type(1) {
+              a {
+                &::before {
+                  content: "";
+                  background: url(../img/instagram_b.svg) no-repeat center center / cover;
+                  width: 20px;
+                  height: 20px;
+                  margin-right: 12px;
+                }
+              }
+            }
+            &:nth-of-type(2) {
+              a {
+                &::before {
+                  content: "";
+                  background: url(../img/line_b.svg) no-repeat center center / cover;
+                  width: 20px;
+                  height: 20px;
+                  margin-right: 12px;
+                }
+              }
+            }
+            a {
+              width: 100%;
+              height: 46px;
+              border: solid 1px #000;
+              display: flex;
+              align-items: center;
+              padding-left: 13px;
+              background: #fff;
+              position: relative;
+              &::after {
+                content: "";
+                background: url(../img/arrow.svg) no-repeat center center / cover;
+                width: 46px;
+                height: 7.3px;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                right: -10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

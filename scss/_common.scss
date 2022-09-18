@@ -1,0 +1,256 @@
+.inner {
+  padding: 0 15px;
+
+  @include mq('pc') {
+    max-width: 1280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.subttl {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.72;
+
+  @include mq('tab') {
+    font-size: 2.6rem;
+  }
+
+  @include mq('pc') {
+    font-size: 3.8rem;
+  }
+}
+
+/* ==============================================================
+# breadcrumb
+=========================================================== */
+.breadcrumb {
+  background: #F2EEE6;
+
+  &__inner {
+    @include mq('tab') {
+      max-width: 1000px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    >ul {
+      display: flex;
+      padding: 10px 0;
+
+      >li {
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+
+        &:not(:first-of-type) {
+          margin-left: 13px;
+
+          &::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            display: block;
+            border-bottom: solid 1px $color-text;
+            border-right: solid 1px $color-text;
+            margin-right: 13px;
+            transform: rotate(-45deg);
+          }
+        }
+
+        >a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+
+
+.cv_btn {
+  position: fixed;
+  width: 100%;
+  height: 58px;
+  bottom: 0;
+  left: 0;
+  z-index: 997;
+
+  @include mq('tab') {
+    width: 180px;
+    height: 180px;
+    bottom: auto;
+    left: auto;
+    top: 130px;
+    right: 40px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5DAC81;
+    width: 100%;
+    height: 58px;
+    font-size: 2.6rem;
+    color: #fff;
+    border: solid 4px #CCCCCC;
+    position: relative;
+
+    @include mq('tab') {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      font-size: 2.7rem;
+      flex-direction: column;
+      border: solid 5px #fff;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%) rotate(-45deg);
+      width: 12px;
+      height: 12px;
+      border-right: solid 2px #fff;
+      border-bottom: solid 2px #fff;
+
+      @include mq('tab') {
+        top: auto;
+        right: 35%;
+        bottom: 5px;
+        width: 24px;
+        height: 24px;
+        transform: translate(-50%, -50%) rotate(45deg);
+        border-right: solid 3px #fff;
+        border-bottom: solid 3px #fff;
+      }
+    }
+
+    >span {
+      font-size: 1.4rem;
+      margin-left: 5px;
+
+      @include mq('tab') {
+        display: block;
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        margin-top: 7px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/* ==============================================================
+  # hero
+  =========================================================== */
+.hero {
+  background: #FFF url(../img/hero_bg.JPG) no-repeat center center / cover;
+
+  &__inner {
+    .text {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include mq('tab') {
+        height: 400px;
+      }
+
+      >h2 {
+        font-size: 2.2rem;
+        color: $color-text;
+        position: relative;
+        z-index: 3;
+        padding: 5px;
+        letter-spacing: 0.15em;
+        &::before {
+          content: "";
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          opacity: 0.5;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+        }
+
+        @include mq('tab') {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/* ===============================================
+# change-color
+=============================================== */
+.change-color {
+  box-shadow: 0 0 3px rgba(148, 96, 74, .2);
+  position: relative;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  // PC~
+  @include mq('pc') {
+    box-shadow: 0 0 6px rgba(148, 96, 74, .2);
+  }
+
+  .header__inner > .logo a >.white {
+    display: none;
+  }
+  .header__inner > .logo a >.gray {
+    display: block;
+  }
+
+  .hamburger {
+    > span {
+      background: #555 !important;
+    }
+  }
+
+  .header__inner-nav {
+    color: #555;
+  }
+
+  .header__inner-nav ul:nth-of-type(2) li:nth-of-type(2) a {
+    @include mq('pc') {
+      border: solid 1px #555;
+    }
+  }
+
+  .header__inner-nav ul:nth-of-type(2) li:nth-of-type(1) {
+    // PC~
+    @include mq('pc') {
+      border-left: solid 1px #555;
+    }
+  }
+}

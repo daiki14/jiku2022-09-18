@@ -1,0 +1,122 @@
+/* ==============================================================
+# footer
+=========================================================== */
+.footer {
+  background: #E3E1CF;
+  padding-top: 30px;
+  margin-bottom: 58px;
+  color: #555;
+  @include mq('tab') {
+    padding-top: 80px;
+    margin-bottom: 0;
+  }
+  &__inner {
+    padding-bottom: 30px;
+    @include mq('tab') {
+      padding-bottom: 80px;
+      max-width: 930px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    &-list {
+      ul {
+        @include mq('tab') {
+          display: flex;
+          justify-content: center;
+        }
+        .left {
+          @include mq('tab') {
+            margin-right: 50px;
+          }
+          @include mq('pc') {
+            margin-right: 100px;
+          }
+          > strong {
+            font-size: 2.2rem;
+            text-align: center;
+            display: block;
+            @include mq('tab') {
+              font-size: 2.5rem;
+            }
+            @include mq('tab') {
+              font-size: 3rem;
+            }
+          }
+          > p {
+            font-size: 1.4rem;
+            text-align: center;
+            margin-top: 13px;
+            @include mq('tab') {
+              font-size: 1.6rem;
+              text-align: left;
+              line-height: 1.67;
+              margin-top: 30px;
+            }
+            @include mq('pc') {
+              font-size: 1.8rem;
+            }
+          }
+        }
+        .right {
+          margin-top: 16px;
+          @include mq('tab') {
+            margin-top: -10px;
+          }
+          @include mq('pc') {
+            margin-top: -20px;
+          }
+          > strong {
+            font-size: 3.6rem;
+            display: block;
+            text-align: center;
+            @include mq('tab') {
+              font-size: 5rem;
+              text-align: left;
+            }
+            span {
+              font-size: 1.7rem;
+              @include mq('tab') {
+                font-size: 1.9rem;
+                margin-right: 7px;
+              }
+              @include mq('pc') {
+                font-size: 2.2rem;
+              }
+            }
+          }
+          > p {
+            font-size: 1.1rem;
+            text-align: center;
+            margin-top: 16px;
+            @include mq('tab') {
+              font-size: 1.3rem;
+              margin-top: 38px;
+            }
+            @include mq('tab') {
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    background: #fff;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    @include mq('tab') {
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+    small {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      text-align: center;
+      display: block;
+      @include mq('tab') {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
