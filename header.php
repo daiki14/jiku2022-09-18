@@ -17,10 +17,10 @@
   <meta propety="og:image" content="">
   <meta propety="og:app_id" content="">
 
-  <link rel="stylesheet" href="css/slick-theme.css" />
-  <link rel="stylesheet" href="css/slick.css" />
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://daiki14.github.io/jiku/css/slick-theme.css" />
+  <link rel="stylesheet" href="https://daiki14.github.io/jiku/css/slick.css" />
+  <link rel="stylesheet" href="https://daiki14.github.io/jiku/css/reset.css" />
+  <link rel="stylesheet" href="https://daiki14.github.io/jiku/css/style.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
   <!--住所自動取得-->
   <script type="text/javascript" src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
@@ -33,8 +33,8 @@
       <!-- logo -->
       <h1 class="logo">
         <a href="#top">
-          <img class="white" src="img/logo.svg" alt="BodyArrange軸" />
-          <img class="gray" src="img/logo_gray.svg" alt="BodyArrange軸">
+          <img class="white" src="https://daiki14.github.io/jiku/img/logo.svg" alt="BodyArrange軸" />
+          <img class="gray" src="https://daiki14.github.io/jiku/img/logo_gray.svg" alt="BodyArrange軸">
         </a>
       </h1>
       <!-- /.logo -->
