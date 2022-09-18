@@ -17,14 +17,14 @@
             <ul>
               <li>
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/fv_bg1-pc.jpg">
-                  <img src="img/fv_bg1-sp.jpg" alt=""/>
+                  <source media="(min-width: 768px)" srcset="https://daiki14.github.io/jiku/img/fv_bg1-pc.jpg">
+                  <img src="https://daiki14.github.io/jiku/img/fv_bg1-sp.jpg" alt=""/>
                 </picture>
               </li>
               <li>
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/fv_bg2-pc.jpg">
-                  <img src="img/fv_bg2-sp.jpg" alt=""/>
+                  <source media="(min-width: 768px)" srcset="https://daiki14.github.io/jiku/img/fv_bg2-pc.jpg">
+                  <img src="https://daiki14.github.io/jiku/img/fv_bg2-sp.jpg" alt=""/>
                 </picture>
               </li>
             </ul>
@@ -32,7 +32,7 @@
           <h2 class="fv__inner-ttl">
             一人一人に向き合い<br />健康までの導きをサポート
           </h2>
-          <img src="img/fv_bg.png" alt="ロゴ" />
+          <img src="https://daiki14.github.io/jiku/img/fv_bg.png" alt="ロゴ" />
         </div>
       </section>
       <!-- /.fv -->
@@ -43,13 +43,13 @@
           <h3 class="subttl">木をメインに創られた<br class="_sp">落ち着いた空間</h3>
           <ul class="about__inner-list">
             <li>
-              <img src="img/about_img1.jpg" alt="" />
+              <img src="https://daiki14.github.io/jiku/img/about_img1.jpg" alt="" />
             </li>
             <li>
-              <img src="img/about_img2.JPG" alt="" />
+              <img src="https://daiki14.github.io/jiku/img/about_img2.JPG" alt="" />
             </li>
             <li>
-              <img src="img/about_img3.JPG" alt="" />
+              <img src="https://daiki14.github.io/jiku/img/about_img3.JPG" alt="" />
             </li>
           </ul>
           <p>
@@ -154,19 +154,19 @@
           <div class="gallery__inner-slider">
             <ul>
               <li>
-                <img src="img/slider1.jpg" alt="" />
+                <img src="https://daiki14.github.io/jiku/img/slider1.jpg" alt="" />
               </li>
               <li>
-                <img src="img/slider2.jpg" alt="" />
+                <img src="https://daiki14.github.io/jiku/img/slider2.jpg" alt="" />
               </li>
               <li>
-                <img src="img/slider3.jpg" alt="" />
+                <img src="https://daiki14.github.io/jiku/img/slider3.jpg" alt="" />
               </li>
               <li>
-                <img src="img/slider4.jpg" alt="" />
+                <img src="https://daiki14.github.io/jiku/img/slider4.jpg" alt="" />
               </li>
               <li>
-                <img src="img/slider5.jpg" alt="" />
+                <img src="https://daiki14.github.io/jiku/img/slider5.jpg" alt="" />
               </li>
             </ul>
           </div>
