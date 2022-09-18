@@ -32,11 +32,11 @@
   <!-- /.cv_btn -->
 
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/picturefill.js"></script>
-  <script src="js/common.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/script.js"></script>
+  <script src="https://daiki14.github.io/jiku/js/slick.min.js"></script>
+  <script src="https://daiki14.github.io/jiku/js/picturefill.js"></script>
+  <script src="https://daiki14.github.io/jiku/js/common.js"></script>
+  <script src="https://daiki14.github.io/jiku/js/main.js"></script>
+  <script src="https://daiki14.github.io/jiku/js/script.js"></script>
 </body>
 
 </html>
